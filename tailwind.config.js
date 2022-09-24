@@ -17,7 +17,10 @@ module.exports = {
         'home-m': "url('/assets/home/background-home-mobile.jpg')",
       },
       fontFamily: {
-        nav: "Barlow Condensed"
+        nav: "Barlow Condensed",
+        h1: "Bellefair",
+        h5: "Barlow Condensed",
+        p: "Barlow",
       }
     },
   },
