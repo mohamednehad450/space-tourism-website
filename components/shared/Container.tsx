@@ -7,11 +7,11 @@ const Container: FC<PropsWithChildren> = ({ children }) => {
         <section
             className={`
                 h-screen max-w-[1440px]
-                flex flex-col
+                flex flex-col mx-auto
                 overflow-hidden
             `}
         >
-            <div className="lg:mt-36 sm:mt-24 mt-20 grow ">
+            <div className="lg:mt-36 sm:mt-24 mt-20 grow">
                 {children}
             </div>
         </section>

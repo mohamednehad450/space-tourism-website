@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
-import { Container, H1, H5, P, RoundButton } from '../components/home'
+import { RoundButton } from '../components/home'
+import { Container, H1, H5, P } from '../components/shared'
 
 
 
