@@ -16,8 +16,9 @@ const Home: NextPage = () => {
 
           <div className='lg:flex-1 text-white flex items-center justify-end flex-col lg:p-0 sm:p-10  '>
             <div className='sm:w-[450px] lg:pb-24 text-center'>
-
-              <H5>{"So, you want to travel to".toLocaleUpperCase()}</H5>
+              <span className='text-accent lg:text-start text-center'>
+                <H5>{"So, you want to travel to".toLocaleUpperCase()}</H5>
+              </span>
               <H1>{"Space".toLocaleUpperCase()}</H1>
               <div className='lg:text-start text-center lg:pt-14'>
                 <P>
