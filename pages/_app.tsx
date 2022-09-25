@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { NavBar, NavLink, NavLinks } from '../components/nav'
 import NavLogo from '../components/nav/NavLogo'
 import { useRouter } from 'next/router'
+import { ProvideAppData } from '../components/hooks'
 
 const routes = [
   { href: "/", label: 'Home', prefix: '00' },
@@ -37,7 +38,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           ))}
         </NavLinks>
       </NavBar>
-      <Component {...pageProps} />
+      <ProvideAppData>
+        <Component {...pageProps} />
+      </ProvideAppData>
     </>
   )
 }
