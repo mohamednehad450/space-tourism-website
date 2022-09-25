@@ -20,7 +20,7 @@ const NavLinks: FC<PropsWithChildren> = ({ children }) => {
                     bg-white backdrop-blur-2xl bg-opacity-5 
                     lg:justify-start sm:justify-evenly
                     sm:relative sm:right-auto sm:translate-x-0
-                    absolute right-0 ${open ? "translate-x-[0]" : "translate-x-[100%]"} transition-all ease-in-out overflow-hidden
+                    absolute right-0 ${open ? "animate-nav-in" : "translate-x-full animate-nav-out"} overflow-hidden
                 `}
             >
                 <button className="sm:hidden my-8 mx-6 mb-14 text-end h-5" onClick={() => setOpen(false)}>
