@@ -20,7 +20,7 @@ const Home: NextPage = () => {
                 <H5>{"So, you want to travel to".toLocaleUpperCase()}</H5>
               </span>
               <H1>{"Space".toLocaleUpperCase()}</H1>
-              <div className='lg:text-start text-center lg:pt-14'>
+              <div className='lg:text-start text-center lg:pt-14 text-accent'>
                 <P>
                   Let’s face it; if you want to go to space, you might as well genuinely go to
                   outer space and not hover kind of on the edge of it. Well sit back, and relax
