@@ -10,7 +10,7 @@ const Container: FC<PropsWithChildren> = ({ children }) => {
                 flex flex-col mx-auto
             `}
         >
-            <div className="lg:mt-36 sm:mt-24 mt-20 grow">
+            <div className="lg:mt-36 sm:mt-24 mt-20 grow pb-32 sm:pb-0">
                 {children}
             </div>
         </section>

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       bg-home-m sm:bg-home-t lg:bg-home bg-cover
     `}>
       <Container>
-        <div className='flex flex-col lg:flex-row h-full pt-7 sm:pt-20 py-11 sm:px-20 px-6'>
+        <div className='flex flex-col lg:flex-row min-h-[84vh] pt-7 sm:pt-20 py-11 sm:px-20 px-6'>
 
           <div className='lg:flex-1 text-white flex items-center justify-end flex-col lg:p-0 sm:p-10 animate-slide-in'>
             <div className='sm:w-[450px] lg:pb-24 text-center'>
