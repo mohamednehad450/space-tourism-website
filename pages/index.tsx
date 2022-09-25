@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Container>
         <div className='flex flex-col lg:flex-row h-full pt-7 sm:pt-20 py-11 sm:px-20 px-6'>
 
-          <div className='lg:flex-1 text-white flex items-center justify-end flex-col lg:p-0 sm:p-10  '>
+          <div className='lg:flex-1 text-white flex items-center justify-end flex-col lg:p-0 sm:p-10 animate-slide-in'>
             <div className='sm:w-[450px] lg:pb-24 text-center'>
               <span className='text-accent lg:text-start text-center'>
                 <H5>{"So, you want to travel to".toLocaleUpperCase()}</H5>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className='lg:flex-1 flex items-center lg:items-end justify-end sm:justify-center lg:justify-end flex-col lg:p-0 sm:p-10 grow'>
+          <div className='lg:flex-1 flex items-center lg:items-end justify-end sm:justify-center lg:justify-end flex-col lg:p-0 sm:p-10 grow animate-fade-in'>
             <RoundButton onClick={() => alert('CLICKED')} >
               {"Explore".toLocaleUpperCase()}
             </RoundButton>
