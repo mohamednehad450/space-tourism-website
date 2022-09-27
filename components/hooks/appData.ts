@@ -49,8 +49,8 @@ const data = {
         {
             "name": "Douglas Hurley",
             "images": {
-                "png": "a/assets/crew/image-douglas-hurley.png",
-                "webp": "a/assets/crew/image-douglas-hurley.webp"
+                "png": "/assets/crew/image-douglas-hurley.png",
+                "webp": "/assets/crew/image-douglas-hurley.webp"
             },
             "role": "Commander",
             "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
@@ -58,8 +58,8 @@ const data = {
         {
             "name": "Mark Shuttleworth",
             "images": {
-                "png": "a/assets/crew/image-mark-shuttleworth.png",
-                "webp": "a/assets/crew/image-mark-shuttleworth.webp"
+                "png": "/assets/crew/image-mark-shuttleworth.png",
+                "webp": "/assets/crew/image-mark-shuttleworth.webp"
             },
             "role": "Mission Specialist",
             "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
