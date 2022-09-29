@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateRows: {
+        "layout": '136px 1fr',
+        "layout-t": '96px 1fr',
+        "layout-m": '64px 1fr',
+      },
       colors: {
         "main": "rgb(11, 13, 23)",
         "accent": "rgb(208, 214, 249)"

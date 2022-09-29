@@ -1,45 +1,53 @@
 import type { NextPage } from 'next'
-import { RoundButton } from '../components/home'
-import { Container, H1, H5, P } from '../components/shared'
-
-
+import { useEffect } from 'react'
+import { Container, RoundButton } from '../components/home'
+import { H1, H5, P } from '../components/shared'
 
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+    const container = document.getElementById("container")
+    container?.classList.add("bg-home-m", "sm:bg-home-t", "lg:bg-home", "bg-cover")
+    return () => { container?.classList.remove("bg-home-m", "sm:bg-home-t", "lg:bg-home", "bg-cover") }
+  }, [])
+
   return (
-    <main className={`
-      h-screen w-screen bg-black overflow-scroll
-      bg-home-m sm:bg-home-t lg:bg-home bg-cover
-    `}>
-      <Container>
-        <div className='flex flex-col lg:flex-row min-h-[84vh] pt-7 sm:pt-20 py-11 sm:px-20 px-6'>
+    <Container>
 
-          <div className='lg:flex-1 text-white flex items-center justify-end flex-col lg:p-0 sm:p-10 animate-slide-in'>
-            <div className='sm:w-[450px] lg:pb-24 text-center'>
-              <span className='text-accent lg:text-start text-center'>
-                <H5>{"So, you want to travel to".toLocaleUpperCase()}</H5>
-              </span>
-              <H1>{"Space".toLocaleUpperCase()}</H1>
-              <div className='lg:text-start text-center lg:pt-14 text-accent'>
-                <P>
-                  Let’s face it; if you want to go to space, you might as well genuinely go to
-                  outer space and not hover kind of on the edge of it. Well sit back, and relax
-                  because we’ll give you a truly out of this world experience!
-                </P>
-              </div>
+      <section className='flex-1 flex lg:items-end lg:justify-start justify-center animate-slide-in'>
 
-            </div>
-          </div>
+        <div className='sm:w-[450px] text-center'>
 
-          <div className='lg:flex-1 flex items-center lg:items-end justify-end sm:justify-center lg:justify-end flex-col lg:p-0 sm:p-10 grow animate-fade-in'>
-            <RoundButton onClick={() => alert('CLICKED')} >
-              {"Explore".toLocaleUpperCase()}
-            </RoundButton>
+          <span className='text-accent lg:text-start text-center'>
+            <H5>{"So, you want to travel to".toLocaleUpperCase()}</H5>
+          </span>
+
+          <span className='text-white'>
+            <H1>{"Space".toLocaleUpperCase()}</H1>
+          </span>
+
+          <div className='lg:text-start text-center lg:pt-14 text-accent'>
+            <P>
+              Let’s face it; if you want to go to space, you might as well genuinely go to
+              outer space and not hover kind of on the edge of it. Well sit back, and relax
+              because we’ll give you a truly out of this world experience!
+            </P>
           </div>
 
         </div>
-      </Container>
-    </main>
+
+      </section>
+
+      <section className='flex-1 flex items-end lg:justify-end justify-center animate-fade-in'>
+
+        <RoundButton onClick={() => alert('CLICKED')} >
+          {"Explore".toLocaleUpperCase()}
+        </RoundButton>
+
+      </section>
+
+    </Container>
   )
 }
 
