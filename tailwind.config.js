@@ -24,11 +24,17 @@ module.exports = {
         'destination': "url('/assets/destination/background-destination-desktop.jpg')",
         'destination-t': "url('/assets/destination/background-destination-tablet.jpg')",
         'destination-m': "url('/assets/destination/background-destination-mobile.jpg')",
+
+        'crew': "url('/assets/crew/background-crew-desktop.jpg')",
+        'crew-t': "url('/assets/crew/background-crew-tablet.jpg')",
+        'crew-m': "url('/assets/crew/background-crew-mobile.jpg')",
       },
       fontFamily: {
         nav: "Barlow Condensed",
         h1: "Bellefair",
         h2: "Bellefair",
+        h3: "Bellefair",
+        h4: "Bellefair",
         h5: "Barlow Condensed",
         sh1: "Bellefair",
         sh2: "Barlow Condensed",
