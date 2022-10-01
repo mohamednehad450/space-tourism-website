@@ -17,7 +17,7 @@ const CrewSelect = () => {
 
 
     return (
-        <div className='sm:grow flex flex-col-reverse sm:flex-col lg:flex-row lg:p-0 sm:px-10 '>
+        <div className='sm:grow flex flex-col-reverse sm:flex-col lg:flex-row lg:p-0 sm:px-10 lg:mx-0 mx-auto '>
 
             <section className='lg:pl-40 lg:flex-1 lg:pt-24 sm:pt-16 pt-8 flex lg:justify-start sm:justify-center bg-fuchsia-500-50 bg-opacity-25' >
 
