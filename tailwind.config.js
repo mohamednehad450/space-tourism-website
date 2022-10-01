@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const prefix = require('./next.config').publicRuntimeConfig?.assetsPrefix || ''
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -17,21 +20,21 @@ module.exports = {
       },
       backgroundImage: {
 
-        'home': "url('/assets/home/background-home-desktop.jpg')",
-        'home-t': "url('/assets/home/background-home-tablet.jpg')",
-        'home-m': "url('/assets/home/background-home-mobile.jpg')",
+        'home': `url('${prefix}/assets/home/background-home-desktop.jpg')`,
+        'home-t': `url('${prefix}/assets/home/background-home-tablet.jpg')`,
+        'home-m': `url('${prefix}/assets/home/background-home-mobile.jpg')`,
 
-        'destination': "url('/assets/destination/background-destination-desktop.jpg')",
-        'destination-t': "url('/assets/destination/background-destination-tablet.jpg')",
-        'destination-m': "url('/assets/destination/background-destination-mobile.jpg')",
+        'destination': `url('${prefix}/assets/destination/background-destination-desktop.jpg')`,
+        'destination-t': `url('${prefix}/assets/destination/background-destination-tablet.jpg')`,
+        'destination-m': `url('${prefix}/assets/destination/background-destination-mobile.jpg')`,
 
-        'crew': "url('/assets/crew/background-crew-desktop.jpg')",
-        'crew-t': "url('/assets/crew/background-crew-tablet.jpg')",
-        'crew-m': "url('/assets/crew/background-crew-mobile.jpg')",
+        'crew': `url('${prefix}/assets/crew/background-crew-desktop.jpg')`,
+        'crew-t': `url('${prefix}/assets/crew/background-crew-tablet.jpg')`,
+        'crew-m': `url('${prefix}/assets/crew/background-crew-mobile.jpg')`,
 
-        'technology': "url('/assets/technology/background-technology-desktop.jpg')",
-        'technology-t': "url('/assets/technology/background-technology-tablet.jpg')",
-        'technology-m': "url('/assets/technology/background-technology-mobile.jpg')",
+        'technology': `url('${prefix}/assets/technology/background-technology-desktop.jpg')`,
+        'technology-t': `url('${prefix}/assets/technology/background-technology-tablet.jpg')`,
+        'technology-m': `url('${prefix}/assets/technology/background-technology-mobile.jpg')`,
       },
       fontFamily: {
         nav: "Barlow Condensed",
