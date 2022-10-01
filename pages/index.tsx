@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { Container, RoundButton } from '../components/home'
 import { H1, H5, P } from '../components/shared'
 
 
 const Home: NextPage = () => {
+
+  const router = useRouter()
 
   useEffect(() => {
     const container = document.getElementById("container")
@@ -41,7 +44,7 @@ const Home: NextPage = () => {
 
       <section className='flex-1 flex items-end lg:justify-end justify-center animate-fade-in max-h-[650px]'>
 
-        <RoundButton onClick={() => alert('CLICKED')} >
+        <RoundButton onClick={() => router.push("/destination")} >
           {"Explore".toLocaleUpperCase()}
         </RoundButton>
 
