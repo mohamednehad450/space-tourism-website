@@ -28,6 +28,10 @@ module.exports = {
         'crew': "url('/assets/crew/background-crew-desktop.jpg')",
         'crew-t': "url('/assets/crew/background-crew-tablet.jpg')",
         'crew-m': "url('/assets/crew/background-crew-mobile.jpg')",
+
+        'technology': "url('/assets/technology/background-technology-desktop.jpg')",
+        'technology-t': "url('/assets/technology/background-technology-tablet.jpg')",
+        'technology-m': "url('/assets/technology/background-technology-mobile.jpg')",
       },
       fontFamily: {
         nav: "Barlow Condensed",
