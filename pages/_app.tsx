@@ -5,6 +5,7 @@ import { NavBar, NavLink, NavLinks } from '../components/nav'
 import NavLogo from '../components/nav/NavLogo'
 import { useRouter } from 'next/router'
 import { ProvideAppData } from '../components/hooks'
+import getConfig from 'next/config'
 
 const routes = [
   { href: "/", label: 'Home', prefix: '00' },
@@ -18,6 +19,7 @@ const routes = [
 function MyApp({ Component, pageProps }: AppProps) {
 
   const router = useRouter()
+  const prefix = getConfig().publicRuntimeConfig?.assetsPrefix || ""
 
   return (
     <>
@@ -29,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <div id="container" className='h-screen grid grid-rows-layout-m sm:grid-rows-layout-t lg:grid-rows-layout'>
         <NavBar>
-          <NavLogo src={'/assets/shared/logo.svg'} href="/" />
+          <NavLogo src={prefix + '/assets/shared/logo.svg'} href="/" />
           <div className='hidden lg:flex items-center grow h-24'>
             <div className='border-b border-white border-opacity-25 translate-x-8 w-full z-10' />
           </div>
