@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <Container>
 
-      <section className='flex-1 flex lg:items-end lg:justify-start justify-center animate-slide-in'>
+      <section className='flex-1 flex lg:items-end lg:justify-start justify-center animate-slide-in max-h-[650px]'>
 
         <div className='sm:w-[450px] text-center'>
 
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
 
       </section>
 
-      <section className='flex-1 flex items-end lg:justify-end justify-center animate-fade-in'>
+      <section className='flex-1 flex items-end lg:justify-end justify-center animate-fade-in max-h-[650px]'>
 
         <RoundButton onClick={() => alert('CLICKED')} >
           {"Explore".toLocaleUpperCase()}

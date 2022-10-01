@@ -11,7 +11,7 @@ const Crew: NextPage = () => {
         return () => { container?.classList.remove("bg-crew-m", "sm:bg-crew-t", "lg:bg-crew", "bg-cover") }
     }, [])
     return (
-        <div className='min-h-full lg:pt-20 sm:p-10 sm:pb-0 p-6 pb-0 flex flex-col'>
+        <div className='min-h-full lg:pt-20 sm:p-10 sm:pb-0 p-6 pb-0 flex flex-col max-w-[1440px] lg:mx-auto'>
             <div className='lg:pl-40 motion-safe:animate-slide-in'>
                 <Header prefix='02' title={"Meet your crew".toLocaleUpperCase()} />
             </div>

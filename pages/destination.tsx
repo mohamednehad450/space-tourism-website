@@ -15,12 +15,12 @@ const Destination: NextPage = () => {
     }, [])
     return (
 
-        <>
+        <div className='max-w-[1440px] lg:mx-auto'>
             <div className='mb-8 sm:m-10 lg:my-16  lg:mx-40 motion-safe:animate-slide-in'>
                 <Header prefix='01' title={"Pick your destination".toLocaleUpperCase()} />
             </div>
             <DestinationSelect />
-        </>
+        </div>
     )
 }
 
