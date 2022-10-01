@@ -1,6 +1,8 @@
+import getConfig from "next/config";
 import Image from "next/image";
 import { FC, PropsWithChildren, useState } from "react";
 
+const prefix = getConfig().publicRuntimeConfig?.assetsPrefix || ""
 
 
 const NavLinks: FC<PropsWithChildren> = ({ children }) => {
@@ -10,7 +12,7 @@ const NavLinks: FC<PropsWithChildren> = ({ children }) => {
     return (
         <>
             <button className="sm:hidden py-8 px-6 h-5" onClick={() => setOpen(true)} >
-                <Image src="/assets/shared/icon-hamburger.svg" width={24} height={20} />
+                <Image src={prefix + "/assets/shared/icon-hamburger.svg"} width={24} height={20} />
             </button>
             <ul
                 onClick={() => setOpen(false)}
@@ -24,7 +26,7 @@ const NavLinks: FC<PropsWithChildren> = ({ children }) => {
                 `}
             >
                 <button className="sm:hidden my-8 mx-6 mb-14 text-end h-5" onClick={() => setOpen(false)}>
-                    <Image src="/assets/shared/icon-close.svg" width={20} height={20} />
+                    <Image src={prefix + "/assets/shared/icon-close.svg"} width={20} height={20} />
                 </button>
                 {children}
             </ul>
