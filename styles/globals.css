@@ -13,5 +13,9 @@ body {
 }
 
 #container {
-  height: -webkit-fill-available !important;
+  max-height: -webkit-fill-available;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
