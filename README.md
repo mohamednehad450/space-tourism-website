@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/mohamednehad450/space-tourism-website)
+- [Solution](https://www.frontendmentor.io/solutions/space-tourism-website-oSRcA4iUvv)
 - [Live Site](https://mohamednehad450.github.io/space-tourism-website/)
 
 ## My process
